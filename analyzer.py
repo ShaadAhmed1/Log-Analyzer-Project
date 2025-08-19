@@ -19,8 +19,7 @@ def parse_apache_log_file(file_path):
     
     return pd.DataFrame(log_data)
 
-# Example usage:
-# If your Apache log file is named 'apache_access.log'
 apache_df = parse_apache_log_file('sample-Apache-log.txt')
 print("Apache Log Data:")
+
 print(apache_df.head())
