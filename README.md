@@ -40,44 +40,47 @@ Visualizations : The tool generates the following data visualizations to provide
 Getting Started
 
 Prerequisites
-Python 3.x
+ 
+ *Python 3.x
 
-The following Python libraries: pandas, re, requests, matplotlib
+ *The following Python libraries: pandas, re, requests, matplotlib
 
 You can install the required libraries using pip:
 
-pip install pandas matplotlib requests
+    pip install pandas matplotlib requests
 
 Usage
-Place your Apache log file (e.g., sample-Apache-log.txt) in the same directory as the Python script.
 
-Run the script from your terminal:
+1. Place your Apache log file (e.g., sample-Apache-log.txt) in the same directory as the Python script.
 
-python your_script_name.py
+2. Run the script from your terminal:
 
-The script will:
+       python your_script_name.py
 
-Print the parsed log data to the console.
+3. The script will:
 
-Print the detected suspicious IPs.
+ *Print the parsed log data to the console.
 
-Generate and display the data visualizations.
+ *Print the detected suspicious IPs.
 
-Create a text file named incident_report.txt with a summary of the findings.
+ *Generate and display the data visualizations.
 
-Code Structure
-parse_apache_log_file(file_path): Parses the log file and returns a pandas DataFrame.
+ *Create a text file named incident_report.txt with a summary of the findings.
 
-detect_scanning(apache_df): Identifies potential scanning IPs.
+Code Structure :
 
-detect_brute_force_login(apache_df): Detects brute-force attempts on a specified login path.
+*parse_apache_log_file(file_path): Parses the log file and returns a pandas DataFrame.
 
-detect_dos(apache_df): Identifies potential DoS attack IPs.
+*detect_scanning(apache_df): Identifies potential scanning IPs.
 
-get_blacklist(): Fetches a public IP blacklist.
+*detect_brute_force_login(apache_df): Detects brute-force attempts on a specified login path.
 
-generate_report(...): Creates and exports the incident report.
+*detect_dos(apache_df): Identifies potential DoS attack IPs.
 
-visualize_top_ips(apache_df): Generates the bar chart for top IPs.
+*get_blacklist(): Fetches a public IP blacklist.
 
-visualize_requests_over_time(apache_df): Generates the line graph for requests over time.
+*generate_report(...): Creates and exports the incident report.
+
+*visualize_top_ips(apache_df): Generates the bar chart for top IPs.
+
+*visualize_requests_over_time(apache_df): Generates the line graph for requests over time.
