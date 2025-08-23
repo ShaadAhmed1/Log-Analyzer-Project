@@ -5,39 +5,36 @@ This is a Python-based tool designed to analyze log files (specifically Apache w
 
 Features
 
- Log Parsing: Efficiently parses Apache log files using regular expressions.
+   Log Parsing: Efficiently parses Apache log files using regular expressions.
 
- Threat Detection:
+   Threat Detection:
 
-  Identifies scanning attempts by tracking the number of unique paths accessed by a single IP address.
+         Identifies scanning attempts by tracking the number of unique paths accessed by a single IP address.
 
-  Detects brute-force login attempts by counting failed login attempts from specific IPs.
+         Detects brute-force login attempts by counting failed login attempts from specific IPs.
 
-  Pinpoints potential DoS attacks by monitoring rapid, high-volume requests from a single IP within a specified time window.
+         Pinpoints potential DoS attacks by monitoring rapid, high-volume requests from a single IP within a specified time window.
 
- IP Blacklist Cross-Referencing: Cross-references detected suspicious IP addresses with a public blacklist to identify known malicious actors.
+   IP Blacklist Cross-Referencing: Cross-references detected suspicious IP addresses with a public blacklist to identify known malicious actors.
 
- Data Visualization: Generates insightful plots to visualize key metrics:
+   Data Visualization: Generates insightful plots to visualize key metrics:
 
-  Top 10 IP Addresses by Request Count: A bar chart showing the most active IPs.
+         Top 10 IP Addresses by Request Count: A bar chart showing the most active IPs.
 
-  Requests Over Time: A line graph illustrating traffic patterns over a period.
+         Requests Over Time: A line graph illustrating traffic patterns over a period.
 
- Incident Reporting: Exports a text-based report detailing all detected threats and their associated IPs.
+   Incident Reporting: Exports a text-based report detailing all detected threats and their associated IPs.
 
-Visualizations
+Visualizations : The tool generates the following data visualizations to provide a clear overview of the detected activity.
 
-The tool generates the following data visualizations to provide a clear overview of the detected activity.
+   Top 10 IP Addresses by Request Count
 
-
-Top 10 IP Addresses by Request Count
-
-This chart helps to quickly identify the IPs that are generating the most traffic, which can often be an indicator of malicious activity or heavy usage.
+         This chart helps to quickly identify the IPs that are generating the most traffic, which can often be an indicator of malicious activity or heavy usage.
 
 
-Requests Over Time
+   Requests Over Time
 
-This line graph shows the volume of requests over a given time period, making it easy to spot unusual spikes in traffic that could indicate a DoS attack.
+         This line graph shows the volume of requests over a given time period, making it easy to spot unusual spikes in traffic that could indicate a DoS attack.
 
 
 Getting Started
