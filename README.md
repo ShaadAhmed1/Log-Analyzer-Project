@@ -55,7 +55,7 @@ Usage
 
 2. Run the script from your terminal:
 
-       python your_script_name.py
+       python analyzer.py
 
 3. The script will:
 
