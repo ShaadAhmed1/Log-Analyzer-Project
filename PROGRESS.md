@@ -6,6 +6,18 @@ Accomplished:
     * Wrote the initial script to parse the Apache log file using `re` and `pandas`.
     * Successfully read and structured the sample log data into a DataFrame.
 
-Next Steps:
-    * Begin writing the functions to detect suspicious patterns (scanning, brute-force, DoS).
-    * Test the detection logic to ensure it works correctly.
+August 21, 2025
+Accomplished:
+Brute-Force Detection: Implemented regex patterns to identify multiple failed login attempts from a single IP address within a short time frame on SSH logs. The tool now flags these IPs as potential threats.
+
+Scanning Patterns: Developed logic to detect web server scanning by identifying repeated requests for non-existent pages or directories, often a precursor to attacks.
+
+Denial-of-Service (DoS) Patterns: Created a mechanism to count rapid, high-volume requests from a single IP on Apache logs, indicating a potential DoS attack. The tool now sets a threshold to alert on such activity
+
+August 23, 2025
+Accomplished:
+IP Blacklist Cross-Referencing:
+The tool now has the functionality to download and parse a public IP blacklist.
+
+Incident Reporting:
+The report for each incident now includes the Scanning Detectionsn, Brute-Force Login Detections, DoS Detections. With Ip Blacklist Cross-Referencing.
